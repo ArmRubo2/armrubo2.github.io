@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --green: #009688;
+    --white: #fff;
+    --black: #000;
+    --lightGray: #CBCACA;
+    --darkGray: #333;
+    --gray: #666;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.title {
+    text-align: center;
+    padding: 40px;
+}
+
+.LG{
+    width: 100%;
+    height: 2rem;
+    background: var(--lightGray);
+}
+
+/* .............. header .............. */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+}
+
+header nav {
+    display: flex;
+}
+
+header a {
+    color: white;
+    padding: 10px 15px;
+}
+
+header a i {
+    padding-right: 10px;
+}
+
+header a:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+header a:first-child {
+    padding: 10px 20px;
+    background: var(--green);
+}
+
+header a:first-child:hover {
+    background: var(--lightGray);
+    color: var(--black);
+}
+
+header .fa-magnifying-glass {
+    color: var(--white);
+    padding: 10px 1rem;
+    cursor: pointer;
+}
+
+header .fa-magnifying-glass:hover {
+    background: var(--green);
+}
+
+
+/* .............. home .............. */
+.home {
+    position: relative;
+    height: 60vh;
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background: var(--green);
+}
+
+
+/* .............. team .............. */
+.team {
+    margin: 4rem 0;
+}
+
+.team .box-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team .box-container .box {
+    text-align: center;
+}
+
+.team .box-container .box img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.team .box-container .box h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+
+/* .............. work .............. */
+.work {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 50px 10px;
+    background: var(--darkGray);
+}
+
+.work .title {
+    color: var(--white);
+    text-align: left;
+}
+
+.work .title h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.work .title p {
+    width: 500px;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.work .box {
+    background: var(--white);
+}
+
+.work .box h3 {
+    padding: 20px;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.work .box p {
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+}
+
+.work .box img {
+    width: 100%;
+}
+
+
+/* .............. pricing .............. */
+.pricing {
+    padding: 50px 10px;
+}
+
+.pricing .box-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.pricing .box-container .box {
+    width: 32%;
+    border: 1px solid var(--lightGray);
+    text-align: center;
+}
+
+.pricing .box-container .box:hover{
+    box-shadow: 5px 5px 20px var(--lightGray);
+}
+
+.pricing .box-container .box ul {
+    list-style-type: none;
+}
+
+.pricing .box-container .box ul .head {
+    background: var(--black);
+    color: var(--white);
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.pricing .box-container .box:nth-child(2) ul .head {
+    background: var(--gray);
+}
+
+.pricing .box-container .box ul li {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--lightGray);
+}
+
+.pricing .box-container .box ul .price-title {
+    font-size: 2.5rem;
+}
+
+.pricing .box-container .box ul .price-title span {
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.pricing .box-container .box ul .btn {
+    background: var(--lightGray);
+}
+
+.pricing .box-container .box ul .btn button {
+    background: var(--green);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.pricing .box-container .box ul .btn button:hover {
+    background: var(--gray);
+}
+
+
+/* ====================CONTACT==================== */
+
+
+.contact{
+    display: flex;
+    background: var(--lightGray);
+    padding-top: 5rem;
+    height: 30rem;
+}
+
+.contact .h2-container h2{
+    position: relative;
+    margin-left: 1.2rem;
+}
+
+.contact .h2-container .contactus{
+    font-weight: 500;
+    border-bottom: 8px solid var(--green);
+}
+
+.contact .h2-container .address{
+    font-weight: 400;
+    padding-top: 1.3rem;
+}
+
+.contact .p-container{
+    display: inline;
+    position: relative;
+    padding-top: 7rem;
+    margin-left: -8rem;
+}
+
+.contact .p-container p{
+    font-size: 1.1rem;
+}
+
+.contact .p-container p i{
+    color: var(--green);
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    padding-top: 1.1rem;
+}
+
+.contact form{
+    width: 55rem;
+    height: 23.5rem;
+    margin-bottom: 2rem;
+    margin-left: 14rem;
+    box-shadow: -3px -3px 20px var(--gray);
+    background: var(--white);
+}
+
+.contact form p{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.contact form .name{
+    padding-top: 1.5rem;
+}
+
+
+.contact form input{
+    border-bottom: 1px solid var(--lightGray);
+    width: 52rem;
+    margin-left: 1.2rem;
+    height: 3rem;
+}
+
+.contact form input:focus{
+    border: 2px solid;
+    height: 2rem;
+    border-radius: 3px;
+    font-size: .9rem;
+}
+
+.contact form input.checkbox{
+    margin-top: 1.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.contact form .like{
+    margin-left: 3.2rem;
+    margin-top: -1.6rem;
+}
+
+.contact form .btn{
+    background: var(--black);
+    color: var(--white);
+    font-weight: 500;
+    font-size: .9rem;
+    width: 70px;
+    height: 40px;
+    margin-left: 50rem;
+}
+
+.contact form .btn:hover{
+    color: var(--black);
+    background: var(--lightGray);
+}
+
+
+/* ====================FOLLOW==================== */
+
+
+.follow{
+    display: flex;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -.5rem;
+}
+
+.follow .black{
+    background: var(--black);
+    width: 100%;
+    height: 17rem;
+}
+
+.follow .black h3{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.follow .black i{
+    color: var(--white);
+    background: var(--green);
+    text-align: center;
+    font-size: 1.3rem;
+    width: 3rem;
+    height: 2.2rem;
+    padding-top: .8rem;
+}
+
+.follow .black .fa-facebook-f{
+    margin-left: 41.5%;
+}
+
+.follow .black h4{
+    font-weight: 400;
+    color: var(--white);
+    margin-left: 43%;
+    margin-top: 1rem;
+}
